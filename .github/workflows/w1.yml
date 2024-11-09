@@ -1,0 +1,25 @@
+name: wget1
+
+on:
+
+  schedule:
+    - cron: '0 0 1 * *'
+ 
+  workflow_dispatch: # on button click
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+
+      - name: Wget
+        run: wget --reject js --adjust-extension --page-requisites --content-on-error=off --local-encoding=UTF-8 --no-parent -k --retry-on-http-error=429 --wait=10 --random-wait -i links1.txt
+
+      - name: Save
+        if: always() # Forces this to run even if wget fails
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Saving...
+          file_pattern: '*'
