@@ -1,0 +1,377 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*　ボタン
+======================================================= */
+[class*="dec-btn"] {
+  border: solid 5px;
+  border-radius: 25px;
+  display: inline-block;
+  position: relative;
+  text-decoration: none !important;
+  transition: .6s;
+  max-width: 100%;
+}
+[class*="dec-btn"]:after {
+  content: "\00a0\f061";
+  font-family: FontAwesome;
+}
+
+/* base */
+.dec-btn--primary {
+  background-color: #040050 !important;
+  border-color: #040050 !important;
+  color: #fff !important;
+}
+.dec-btn--secondary {
+  background-color: #23527c !important;
+  border-color: #23527c !important;
+  color: #fff !important;
+}
+.dec-btn--attention {
+  background-color: #d3191c !important;
+  border-color: #d3191c !important;
+  color: #fff !important;
+}
+.dec-btn--dark {
+  background-color: #333 !important;
+  border-color: #333 !important;
+  color: #fff !important;
+}
+.dec-btn--light {
+  background-color: #e5e5ed !important;
+  border-color: #e5e5ed !important;
+  color: #333 !important;
+}
+.dec-btn--grey {
+  background-color: #ddd !important;
+  border-color: #ddd !important;
+  color: #333 !important;
+}
+
+/* outline */
+[class*="dec-btn-ol"] {
+  background-color: #fff !important;
+  border: 3px solid;
+}
+.dec-btn-ol--primary {
+  border-color: #040050 !important;
+  color: #040050 !important;
+}
+.dec-btn-ol--secondary {
+  border-color: #23527c !important;
+  color: #23527c !important;
+}
+.dec-btn-ol--attention {
+  border-color: #d3191c !important;
+  color: #d3191c !important;
+}
+.dec-btn-ol--dark {
+  border-color: #333 !important;
+  color: #333 !important;
+}
+.dec-btn-ol--light {
+  border-color: #e5e5ed !important;
+  color: #333 !important;
+}
+.dec-btn-ol--grey {
+  border-color: #ddd;
+  color: #333;
+}
+
+/* hover・focus */
+[class*="dec-btn"]:hover,
+[class*="dec-btn"]:focus {
+  border-style: double;
+  opacity: .6;
+  text-decoration: none !important;
+}
+.dec-btn--primary:hover,
+.dec-btn--primary:focus,
+.dec-btn--secondary:hover,
+.dec-btn--secondary:focus,
+.dec-btn--attention:hover,
+.dec-btn--attention:focus,
+.dec-btn--dark:hover,
+.dec-btn--dark:focus {
+  border-color: #fff !important;
+  color: #fff !important;
+  opacity: 1;
+}
+.dec-btn--light:hover,
+.dec-btn--light:focus,
+.dec-btn--grey:hover,
+.dec-btn--grey:focus {
+  border-color: #040050 !important;
+  color: #333 !important;
+  opacity: 1;
+}
+.dec-btn-ol--primary:hover,
+.dec-btn-ol--primary:focus {
+  color: #040050 !important;
+}
+.dec-btn-ol--secondary:hover,
+.dec-btn-ol--secondary:focus {
+  color: #23527c !important;
+}
+.dec-btn-ol--attention:hover,
+.dec-btn-ol--attention:focus {
+  color: #d3191c !important;
+}
+.dec-btn-ol--dark:hover,
+.dec-btn-ol--dark:focus,
+.dec-btn-ol--light:hover,
+.dec-btn-ol--light:focus,
+.dec-btn-ol--grey:hover,
+.dec-btn-ol--grey:focus {
+  color: #333 !important;
+}
+
+/* size */
+.dec-btn--size-lg { padding: .9375rem 15rem;}
+.dec-btn--size-md { padding: .625rem 7.5rem;}
+.dec-btn--size-sm { padding: .3125rem 1.875rem;}
+
+
+/*　罫線
+======================================================= */
+.dec-line--primary,
+.dec-line-pe--primary::before,
+.dec-line-pe--primary::after {
+  border-color: #040050 !important;
+}
+.dec-line--secondary,
+.dec-line-pe--secondary::before,
+.dec-line-pe--secondary::after {
+  border-color: #23527c !important;
+}
+.dec-line--attention,
+.dec-line-pe--attention::before,
+.dec-line-pe--attention::after {
+  border-color: #d3191c !important;
+}
+.dec-line--dark,
+.dec-line-pe--dark::before,
+.dec-line-pe--dark::after {
+  border-color: #040050 !important;
+}
+.dec-line--light,
+.dec-line-pe--light::before,
+.dec-line-pe--light::after {
+  border-color: #e5e5ed !important;
+}
+.dec-line--grey,
+.dec-line-pe--grey::before,
+.dec-line-pe--grey::after {
+  border-color: #ddd !important;
+}
+#footer .dec-line--grey,
+#footer .dec-line-pe--grey::before,
+#footer .dec-line-pe--grey::after {
+  border-color: #ccc !important;
+}
+
+
+/*　背景
+======================================================= */
+.dec-bg--primary,
+.dec-bg-pe--primary::before,
+.dec-bg-pe--primary::after {
+  background-color: #040050 !important;
+  color: #fff !important;
+}
+.dec-bg--secondary,
+.dec-bg-pe--secondary::before,
+.dec-bg-pe--secondary::after {
+  background-color: #23527c !important;
+  color: #fff !important;
+}
+.dec-bg--attention,
+.dec-bg-pe--attention::before,
+.dec-bg-pe--attention::after {
+  background-color: #d3191c !important;
+  color: #fff !important;
+}
+.dec-bg--dark,
+.dec-bg-pe--dark::before,
+.dec-bg-pe--dark::after {
+  background-color: #040050 !important;
+  color: #fff !important;
+}
+.dec-bg--light,
+.dec-bg-pe--light::before,
+.dec-bg-pe--light::after {
+  background-color: #e5e5ed !important;
+  color: #333 !important;
+}
+#opt .dec-bg--light,
+#opt .dec-bg-pe--light::before,
+#opt .dec-bg-pe--light::after {
+  background-color: #fff !important;
+}
+.dec-bg--grey,
+.dec-bg-pe--grey::before,
+.dec-bg-pe--grey::after {
+  background-color: #ddd !important;
+  color: #333 !important;
+}
+
+.dec-bg--contents,
+.dec-bg-pe--contents::before,
+.dec-bg-pe--contents::after {
+  background: #fff !important;
+}
+#header .dec-bg--contents,
+#header .dec-bg-pe--contents::before,
+#header .dec-bg-pe--contents::after{
+  background: #040050 !important;
+  color: #fff !important;
+}
+#opt .dec-bg--contents,
+#opt .dec-bg-pe--contents::before,
+#opt .dec-bg-pe--contents::after{
+  background: #e5e5ee !important;
+}
+#footer .dec-bg--contents,
+#footer .dec-bg-pe--contents::before,
+#footer .dec-bg-pe--contents::after{
+  background: #ddd !important;
+}
+
+.top #side .dec-bg--contents,
+.top #side  .dec-bg-pe--contents::before,
+.top #side  .dec-bg-pe--contents::after{
+  background: #e5e5ee !important;
+}
+
+
+/*　テキスト
+======================================================= */
+.dec-txt--primary,
+.dec-txt-pe--primary::before,
+.dec-txt-pe--primary::after {
+  color: #040050 !important;
+}
+.dec-txt--secondary,
+.dec-txt-pe--secondary::before,
+.dec-txt-pe--secondary::after {
+  color: #23527c !important;
+}
+.dec-txt--attention,
+.dec-txt-pe--attention::before,
+.dec-txt-pe--attention::after {
+  color: #d3191c !important;
+}
+.dec-txt--dark,
+.dec-txt-pe--dark::before,
+.dec-txt-pe--dark::after {
+  color: #333 !important;
+}
+.dec-txt--light,
+.dec-txt-pe--light::before,
+.dec-txt-pe--light::after {
+  color: #e5e5ed !important;
+}
+.dec-txt--grey,
+.dec-txt-pe--grey::before,
+.dec-txt-pe--grey::after {
+  color: #ddd !important;
+}
+
+
+/*　ボックス
+======================================================= */
+[class*="dec-box-"] {
+  padding: 15px;
+  position: relative;
+}
+[class*="dec-box-"]:before {
+  border: 1px dotted;
+  content: "";
+  display: block;
+  position: absolute;
+  height: calc(100% - 8px);
+  top: 4px;
+  left: 4px;
+  width: calc(100% - 8px);
+  }
+#cms_contents_area [class*="dec-box-"]:before {
+  z-index: -1;
+}
+.dec-box--primary,
+.dec-box-pe--primary::before,
+.dec-box-pe--primary::after  {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #040050 !important;
+  border-radius: 0;
+}
+.dec-box--primary:before {
+  border-color: #040050 !important;
+}
+.dec-box--secondary,
+.dec-box-pe--secondary::before,
+.dec-box-pe--secondary::after  {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #23527c !important;
+  border-radius: 0;
+}
+.dec-box--secondary:before {
+  border-color: #23527c !important;
+}
+.dec-box--attention,
+.dec-box-pe--attention::before,
+.dec-box-pe--attention::after  {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d3191c !important;
+  border-radius: 0;
+}
+.dec-box--attention:before {
+  border-color: #d3191c !important;
+}
+.dec-box--dark,
+.dec-box-pe--dark::before,
+.dec-box-pe--dark::after  {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #040050 !important;
+  border-radius: 0;
+}
+.dec-box--dark:before {
+  border-color: #040050 !important;
+}
+.dec-box--light,
+.dec-box-pe--light::before,
+.dec-box-pe--light::after  {
+  background-color: #e5e5ed !important;
+  border: none;
+  border-radius: 0;
+}
+.dec-box--light:before {
+  display: none;
+}
+.dec-box--grey,
+.dec-box-pe--grey::before,
+.dec-box-pe--grey::after  {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ddd !important;
+  border-radius: 0;
+}
+.dec-box--grey:before {
+  border-color: #ddd !important;
+}
+
+/* スマホ以外 */
+@media (min-width: 768px) {
+  [class*="dec-box-"] {
+    padding: 30px;
+  }
+}

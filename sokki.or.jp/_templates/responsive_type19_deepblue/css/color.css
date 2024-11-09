@@ -1,0 +1,946 @@
+@charset "utf-8";
+/* CSS Document */
+/* 基本の色：#040050 (=rgb(4, 0, 80) */
+
+/* ---------------------------------------------------------------------------------------- 
+	基本
+---------------------------------------------------------------------------------------- */
+a {
+	color: #23527c;
+}
+#header {
+	color: #fff;
+	background-color: #040050;
+}
+#header a {
+	color: #fff;
+}
+.top div#side {
+	background-color: rgba(4, 0, 80, 0.1);
+}
+.top div#right {
+}
+.column2 #sidebox::before,
+.column2 #sidebox::after {
+	border-color: rgba(4, 0, 80, 0.4);
+}
+#opt {
+	background-color: rgba(4, 0, 80, 0.1);
+}
+#footer address {
+	color: #fff;
+	background-color: #040050;
+}
+/* -------------------------------------
+ * メニュー
+ * ---------------------------------- */
+/* ハンバーガーメニューのボタン */
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: #040050;
+	border-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-toggle .char {
+	color: #fff;
+}
+
+#header .navbar-nav > li a {
+	color: #fff;
+}
+/* スマホ */
+@media (max-width: 767px) {
+	/* ハンバーガーメニューの背景 */
+	.navbar-default .navbar-collapse {
+		background-color: rgba(4, 0, 80, 0.9);
+	}
+	
+	/* 追加記述 */
+	#header .navbar-collapse > .navbar-nav .navbar-nav .navbar-nav {
+		border-color: #fff;
+	}
+	
+}
+/* スマホ以外 */
+@media (min-width: 768px) {
+	#header .navbar-nav > li a {
+		color: #fff;
+	}
+	#header .navbar-collapse > .navbar-nav > li > a:after {
+		border-left-color: #fff;
+	}
+	#header .navbar-collapse > .navbar-nav > li > a.menu-selected:before {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+	
+	/* 追加記述 */
+	#header .navbar-collapse > .navbar-nav .navbar-nav > li > a {
+		background-color: #010137;
+	}
+	
+	#header .navbar-collapse > .navbar-nav .navbar-nav > li > a:hover {
+		background-color: #00001b;
+	}
+	
+}
+/* upper menu */
+.upperNavi li a:before {
+	border-color: rgba(4, 0, 80, 0.6);
+}
+.upperNavi li a:hover:before {
+	background-color: rgba(4, 0, 80, 0.1);
+}
+
+/* bottom menu */
+.bottomNavi li a:before {
+	border-color: rgba(4, 0, 80, 0.6);
+}
+.bottomNavi li a:hover:before {
+	background-color: rgba(4, 0, 80, 0.1);
+}
+/* side menu */
+.column2 .sideNavi .boxBottom > ul > li,
+.column2 .rightNavi .boxBottom > ul > li {
+	border-color: #040050;
+}
+.column2 .sideNavi ul li a,
+.column2 .rightNavi ul li a {
+	color: #333;
+}
+.column2 .sideNavi ul li a.menu-selected,
+.column2 .rightNavi ul li a.menu-selected {
+	background-color: rgba(4, 0, 80, 0.1);
+	filter: brightness(130%);
+}
+.column2 .sideNavi .boxBottom > ul > li > a:before,
+.column2 .rightNavi .boxBottom > ul > li > a:before {
+	background-color: #040050;
+}
+
+.column2 .sideNavi ul li a:before,
+.column2 .rightNavi ul li a:before {
+	color: #040050;
+	filter: hue-rotate(15deg);
+}
+/* opt menu */
+#opt .naviBox .boxBottom > ul > li {
+	border-color: #040050;
+	background-color: #fff;
+}
+#opt .naviBox ul li a {
+	color: #333;
+}
+#opt .naviBox ul li a.menu-selected {
+	background-color: rgba(4, 0, 80, 0.1);
+	filter: brightness(130%);
+}
+#opt .naviBox .boxBottom > ul > li > a:before {
+	background-color: #040050;
+}
+
+#opt .naviBox ul li a:before {
+	color: #040050;
+	filter: hue-rotate(15deg);
+}
+
+/* footer menu */
+.footerNavi ul > li a {
+	color: #333;
+}
+#footer .footerNavi ul > li a:before,
+#footer .footerNavi ul > li a:after {
+	border-bottom-color: #040050;
+	border-right-color: #040050;
+}
+/* -------------------------------------
+ * 見出し
+ * ---------------------------------- */
+h1,h1 a, h1 a:hover {
+	color: #333;
+}
+#header h1,
+#header h1 a, 
+#header h1 a:hover {
+	color: #fff;
+}
+h1:before {
+	background-color: #040050;
+}
+h2,h2 a, h2 a:hover {
+	color: #333;
+}
+#header h2,
+#header h2 a, 
+#header h2 a:hover {
+	color: #fff;
+}
+h2:before {
+	border-left-color: transparent;
+	border-bottom-color: #040050;
+}
+h3:before {
+	border-bottom-color: #040050;
+}
+#header h3:before {
+	border-bottom-color: #fff;
+}
+h4 {
+	background-color: rgba(4, 0, 80, 0.1);
+}
+h4,h4 a, h4 a:hover {
+	color: #333;
+}
+#header h4,
+#header h4 a, 
+#header h4 a:hover {
+	color: #fff;
+}
+#header h4 {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+h5 {
+	border-bottom-color: rgba(4, 0, 80, 0.2);
+}
+h5,h5 a, h5 a:hover {
+	color: #333;
+}
+#header h5 {
+	border-color: #fff;
+}
+#header h5,
+#header h5 a, 
+#header h5 a:hover {
+	color: #fff;
+}
+h6,h6 a, h6 a:hover {
+	color: #333;
+}
+#header h6,
+#header h6 a, 
+#header h6 a:hover {
+	color: #fff;
+}
+/* -------------------------------------
+ * リスト
+ * ---------------------------------- */
+ul li:before {
+	border-color: #040050;
+}
+/* -------------------------------------
+ * 表組
+ * ---------------------------------- */
+caption {
+	color: #333;
+}
+#header caption {
+}
+table th,
+table td,
+form .variationInfo table th,
+form .variationInfo table td {
+	border-bottom-color: rgba(4, 0, 80, 0.2);
+}
+table th,
+table th a {
+}
+#header table td {
+}
+#header table td a {
+}
+/* -------------------------------------
+ * ページの先頭へ
+ * ---------------------------------- */
+.pageTop a:before {
+	color: #040050;
+}
+/* -------------------------------------
+ * ブログ
+ * ---------------------------------- */
+/* RSS */
+.blogFeedList li:before {
+	color: #040050;
+}
+/* -------------------------------------
+ * 各種ボタン
+ * ---------------------------------- */
+.topicDigestLink a,
+.blogRecentLink a,
+.parts_other_bupageTopBox a,
+.parts_other_buPrintBox a,
+.returnBu a,
+a.returnBu,
+.cartPartsLook a,
+.clearBu input,
+.agreeNoBu input,
+.agreeYesBu input,
+.noAgreeYesBu input,
+.pageLinkBox a,
+#header #user-login .headerBoxBottom div div.buLogout,
+input.formRegisterBu,
+#wrapper input:not([type]),
+#wrapper input[type="button"],
+#wrapper input[type="submit"],
+.pageMore a {
+	border-color: transparent;
+	background-color: #040050;
+	color: #fff;
+}
+/* -------------------------------------
+ * トピックス
+ * ---------------------------------- */
+.topicsDigestBox h4 {
+	background-color: transparent;
+}
+.topicsListBox > div,
+.topicsDigestBox > div {
+	border-color: #040050;
+}
+#opt .topicsListBox > div,
+#opt .topicsDigestBox > div {
+	background-color: #fff;
+	border-color: #040050;
+}
+/* -------------------------------------
+ * ブログ
+ * ---------------------------------- */
+.blogRecentList ul li a,
+.blogCategoryList ul li a,
+.blogMonthlyList ul li a,
+.blogFeedList ul li a {
+	color: #333;
+}
+.blogTrackbacksBox,
+.blogCommentsBox {
+	border-color: #040050;
+}
+/* -------------------------------------
+ * カレンダー
+ * ---------------------------------- */
+table.calendar .prev,
+table.calendar .next {
+	color: #aaa;
+}
+
+table.calendar .prev a,
+table.calendar .next a {
+}
+.week-label th,
+.week-label td {
+	background-color: rgba(4, 0, 80, 0.2);
+	color: #333;
+}
+table .week-label .sat {
+	color: #00f;
+}
+table .week-label .sun {
+	color: #c00;
+}
+.publiHoliday {
+	color: #c00;
+}
+table.calendar td.closed {
+	background-color: #eee;
+}
+.calenderBody table.calendar,
+.calenderBody table.calendar tr,
+.calenderBody table.calendar th,
+.calenderBody table.calendar td,
+.businessCalendarBody table.calendar,
+.businessCalendarBody table.calendar tr,
+.businessCalendarBody table.calendar th,
+.businessCalendarBody table.calendar td,
+.eventCalendar .calenderBody table.calendar,
+.eventCalendar .calenderBody table.calendar tr,
+.eventCalendar .calenderBody table.calendar th,
+.eventCalendar .calenderBody table.calendar td {
+	border-color: #ccc;
+}
+/* -------------------------------------
+ * アルバム
+ * ---------------------------------- */
+#sliderparent #sl0base {
+	background-color: rgba(4, 0, 80, 0.5);;
+}
+#sliderparent #sl0slider {
+	background-color: #040050;
+}
+div.pagination span.current {
+	background-color: #040050 !important;
+}
+/* ----------------------------------------------------------------------
+
+	コンテンツパーツ
+
+---------------------------------------------------------------------- */
+#logo a,
+#siteDesc {
+}
+/* よくある質問 */
+.qaList,
+.qaList:before {
+	border-color: #040050;
+}
+.qaList dl dd:before {
+	background-color: #040050;
+}
+.qaList dl dd:after {
+	color: #040050;
+}
+/* リンクと説明 */
+.explanList,
+.explanList:before {
+	border-color: #040050;
+}
+/* テキスト系 枠線 */
+.parts_text_type02,
+.parts_text_type04,
+.parts_text_type06,
+.parts_text_type08 {
+	border-color: #040050;
+}
+.parts_text_type02:before,
+.parts_text_type04:before,
+.parts_text_type06:before,
+.parts_text_type08:before {
+	border-color: #040050;
+}
+
+/* ----------------------------------------------------------------------
+
+	新規パーツ [2017.11.26]
+
+---------------------------------------------------------------------- */
+/* 背景色 */
+.parts_h_type17_box_text_foot,
+.parts_h_type18_box_foot,
+.parts_img_type28_box_text,
+.parts_img_type31_box_text,
+.parts_img_type38_text,
+.parts_img_type39_text,
+.parts_text_type16,
+.parts_img_type48,
+.parts_img_type49,
+.parts_img_type50_text_box,
+.parts_img_type51_text_box {
+	background-color: #f5f5f5;
+}
+.parts_img_type36_text,
+.parts_img_type37_text {
+	background-color: rgba(4, 0, 80, 0.8);
+}
+.parts_free_type01_head:after {
+	background-color: #ccc;
+}
+.parts_h_type23_box_head_num > span,
+.parts_h_type24_box_head_num > span,
+div.parts_img_type40_box_num,
+div.parts_img_type41_box_num,
+div.parts_img_type42_box_num,
+div.parts_img_type43_box_num,
+.parts_text_type14_head,
+.parts_text_type15_head,
+.parts_h_type25,
+.parts_h_type26,
+.parts_h_type27,
+.parts_free_type04_head {
+	background-color: #040050;
+}
+.parts_free_type02_body_box:last-child a,
+.parts_free_type03_bu a {
+	background-color: rgba(4, 0, 80, 1);
+}
+.parts_h_type25_body,
+.parts_h_type26_body,
+.parts_h_type27_body {
+	background-color: #fff;
+}
+.parts_img_type34 p,
+.parts_img_type35_text {
+	background-color: rgba(4, 0, 80, 0.5);
+}
+/* テキスト */
+.parts_h_type23_box_head_num > span,
+.parts_h_type24_box_head_num > span,
+div.parts_img_type40_box_num,
+div.parts_img_type41_box_num,
+div.parts_img_type42_box_num,
+div.parts_img_type43_box_num,
+.parts_text_type14_head,
+#main .parts_text_type14_head h3,
+.parts_text_type15_head,
+#main .parts_text_type15_head h3,
+.parts_h_type25 h4,
+.parts_h_type26 h4,
+.parts_h_type27 h4,
+.parts_free_type04_head {
+	color: #fff;
+}
+.parts_h_type23_box_head_num > span a,
+.parts_h_type24_box_head_num > span a,
+div.parts_img_type40_box_num a,
+div.parts_img_type41_box_num a,
+div.parts_img_type42_box_num a,
+div.parts_img_type43_box_num a,
+.parts_text_type14_head a,
+#main .parts_text_type14_head h3 a,
+.parts_text_type15_head a,
+#main .parts_text_type15_head h3 a,
+.parts_h_type25 h4 a,
+.parts_h_type26 h4 a,
+.parts_h_type27 h4 a,
+.parts_free_type04_head a {
+	color: #fff;
+}
+.parts_free_type02_body_box:last-child a,
+.parts_free_type03_bu a {
+	color: #fff;
+}
+.parts_free_type01_body_tel span:first-child,
+.parts_free_type01_body_fax span:first-child,
+.parts_free_type02_body_tel span:first-child,
+.parts_free_type08_text h1,
+div.parts_free_type09_box_text,
+div.parts_free_type09_box_text h1 {
+	color: #333;
+}
+.parts_h_type17_box_text h4,
+.parts_h_type18_box_text h4 {
+}
+.parts_h_type19_body_head h4,
+.parts_h_type20_box_body_head h4 {
+}
+.parts_img_type34 p,
+.parts_img_type35_text,
+.parts_img_type35_text h4,
+.parts_img_type36_text,
+.parts_img_type37_text,
+.parts_img_type36_text h4,
+.parts_img_type37_text h4 {
+	color: #fff;
+}
+.parts_img_type34 p a,
+.parts_img_type35_text a,
+.parts_img_type35_text h4 a,
+.parts_img_type36_text a,
+.parts_img_type37_text a,
+.parts_img_type36_text h4 a,
+.parts_img_type37_text h4 a {
+	color: #fff;
+}
+/* 線 */
+.parts_free_type04,
+.parts_text_type14,
+.parts_text_type15 {
+	border-color: #040050;
+}
+.parts_free_type01,
+.parts_free_type02,
+.parts_free_type03 {
+	border-color: #ccc;
+}
+.parts_img_type50_text_box:after {
+	border-color: transparent #f8f8f8 transparent transparent;
+}
+.parts_img_type51_text_box:after {
+	border-color: transparent transparent transparent #f8f8f8;
+}
+.parts_h_type21_head > div,
+.parts_h_type21_body > div,
+.parts_h_type22_head > div,
+.parts_h_type22_body > div,
+.parts_text_type14 .parts_text_type14_head:after {
+	border-top-color: #040050;
+}
+.parts_h_type21_head h4,
+.parts_h_type21_head h4,
+.parts_h_type22_head h4,
+.parts_h_type22_head h4 {
+	color: #040050;
+}
+.parts_h_type21_body > div,
+.parts_h_type22_body > div {
+	border-top-color: #f8f8f8;
+}
+.parts_text_type18 li::after,
+.parts_text_type19 li::after,
+.parts_text_type20 li::after,
+.parts_text_type21 li::after,
+.parts_text_type22 li::after,
+.parts_text_type23 li::after {
+	border-left-color: #040050;
+	border-bottom: #040050;
+}
+.parts_free_type02_body_box:first-child {
+	border-right-color: #ccc;
+}
+/* キービジュアル */
+.parts_free_type05.box,
+.parts_free_type05_photo,
+.parts_free_type06.box,
+.parts_free_type06_photo,
+#header .parts_free_type07.box,
+.parts_free_type09.box,
+.parts_free_type09_photo {
+	background-color: #eee;
+}
+.parts_free_type05_text,
+.parts_free_type06_text,
+.parts_free_type07_text,
+.parts_free_type08_text,
+div.parts_free_type09_box_text > div {
+	background: rgba(231,231,231,0.6);
+}
+.parts_free_type05_text a,
+.parts_free_type06_text a,
+.parts_free_type07_text_bu a {
+	color: #fff;
+}
+.parts_free_type05_text a,
+.parts_free_type06_text a,
+.parts_free_type07_text_bu a {
+	background-color: rgba(4, 0, 80, 0.8);
+}
+@media (max-width: 767px) {
+	
+	.parts_free_type05_text,
+	.parts_free_type06_text,
+	.parts_free_type07_text_bu {
+		background-color: #fff;
+	}
+}
+/* ---------------------------------------------------------------------------------------- 
+
+	初期データオリジナル
+
+---------------------------------------------------------------------------------------- */
+.btn01 {
+	border-color: #333;
+}
+.btn01:focus,
+.btn01:hover {
+	border-style: solid;
+	color: #fff;
+}
+.btn01:focus:before,
+.btn01:hover:before {
+	color: #fff;
+	background-color: #040050;
+}
+.btn02 {
+	color: #fff;
+	border-color: #040050;
+	background-color: #040050;
+}
+.btn02:focus,
+.btn02:hover {
+	color: #fff;
+	border-color: #fff;
+}
+#main_visual .bg_header_content {
+	background: rgba(255,255,255,0.7);
+	color: #333;
+}
+#main_visual h1 {
+	color: #333;
+}
+#main_visual h1:before {
+	border-left-color: #040050;
+	border-top-color: #040050;
+}
+#main_visual h1:after {
+	border-right-color: #040050;
+	border-bottom-color: #040050;
+}
+/* スマホ*/
+@media (max-width: 767px) { 
+}
+
+
+/* ----------------------------------------------------------------------
+
+	新規パーツ [2020.7]
+
+---------------------------------------------------------------------- */
+
+/* ボタン */
+.btn03{
+	border: solid 5px #23527c;
+	color: #fff;
+	background: #23527c;
+}
+.btn03:hover,
+.btn03:focus{
+	border-color: #fff;
+	color: #fff;
+	border-style: double;
+	background: #23527c;
+}
+a.cparts-btn-round,
+a.cparts-btn-round,
+a.cparts-btn-square,
+a.cparts-btn-square,
+div.cparts-var03-type18 a,
+div.cparts-var03-type18 a{
+	background-color: #040050;
+	color: #fff;
+	border: solid 5px #040050;
+}
+a.cparts-btn-round:hover,
+a.cparts-btn-round:focus,
+a.cparts-btn-square:hover,
+a.cparts-btn-square:focus,
+div.cparts-var03-type18 a:hover,
+div.cparts-var03-type18 a:focus{
+	border-style: double;
+	background-color: #040050;
+	border-color: #fff;
+	color: #fff;
+}
+.btn02.btn-primary:hover{
+	background-color: #040050;
+}
+
+/* 診療時間 */
+div.cparts-var03-type02 .cparts-txt-block{
+	border-right: 1px solid #040050;
+}
+div[col-flex="1-4"].cparts-var03-type02 div.cparts-txt-block.lay-col12-xs-4:nth-of-type(2),
+div[col-flex="1-4"].cparts-var03-type02 div.cparts-txt-block.lay-col12-xs-3:nth-of-type(2) {
+	border-right-color: #040050;
+}
+
+/* 画像ありフロー図（矢印なし） */
+div.cparts-var03-type03a{
+	border: 2px solid #040050;
+}
+div.cparts-var03-type03a .cparts-head-block{
+	background-color: #040050;	
+	border: none;
+}
+div.cparts-var03-type03a .cparts-head-block h3{
+	color: #fff;
+}
+
+/* プラン別価格表（横並び） */
+div.cparts-var03-type04 .cparts-ttl-block{
+	background-color: #040050;
+	border-bottom: 2px solid #040050;
+}
+div.cparts-var03-type04 .cparts-ttl-block h4{
+	color: #fff;
+}
+div.cparts-var03-type04 .cparts-body-block{
+	border: 2px solid #040050;
+}
+div.cparts-var03-type04 div.cparts-txt-block h5{
+	border-top: 2px solid #040050;
+}
+
+/* 利用者様の声１・２ */
+div.cparts-var03-type09a .cparts-body-block{
+	box-shadow: 5px 5px 0px 0 rgba(4,0,80, .5);
+}
+div.cparts-var03-type09b .cparts-body-block{
+	box-shadow: -5px 5px 0px 0 rgba(4,0,80, .5);
+}
+
+/* 流れ（ライン） */
+div.cparts-var03-type24 .cparts-body-block{
+	border-left: 4px solid #040050;
+}
+div.cparts-var03-type24.cparts-connector--curve + .cparts-var03-type24.cparts-connector--curve:nth-of-type(even) .cparts-body-block{
+	border-right: 4px solid #040050;
+}
+div.cparts-var03-type24 + .cparts-var03-type24.cparts-connector--curve .cparts-head-block,
+div.cparts-var03-type24 + .cparts-var03-type24 > div:before,
+div.cparts-var03-type24 + .cparts-var03-type24 > div:after,
+div.cparts-var03-type24 + .cparts-var03-type24.cparts-connector--curve > div:after{
+	color: #040050;
+}
+
+/* アクセス */
+div.cparts-var03-type20a ul li:nth-child(2n):before,
+div.cparts-var03-type20b ul li:nth-child(2n):before{
+	border: 2px solid #eaeaea;
+}
+
+/* クリックで詳細表示 */
+div.cparts-var03-type12a .cparts-body-block{
+	background: rgba(4, 0, 80, 0.1);
+}
+/* 目次 */
+div.cparts-var03-type18 .cparts-body-block,
+div.cparts-var03-type18 .cparts-body-block:before{
+	border-color: #040050;
+}
+/* 流れ（横並び） */
+div.cparts-var03-type21 .cparts-no-block{
+	border-color: #040050;
+}
+div.cparts-var03-type21:after{
+		border-color: transparent transparent transparent #040050;
+}
+@media (max-width: 767px){
+	div.cparts-var03-type21:after{
+		border-color: #040050 transparent transparent transparent;
+	}
+}
+
+/* フリップカード */
+@media (min-width: 992px){
+div.cparts-var03-type25 .cparts-ttl-block h3 {
+    text-shadow: 0 0 5px #040050;
+}
+div.cparts-var03-type25 .cparts-txt-block{
+	background-color: rgba(4, 0, 80, 0.1);
+}
+div.cparts-var03-type25 .cparts-txt-block p{
+	color: #333;
+
+}
+.cparts-var03-type25 .cparts-txt-block > div{
+	color: #333;
+}
+}
+
+/* マウスオーバー */
+div.cparts-var03-type19a .cparts-body-block,
+div.cparts-var03-type19b .cparts-body-block{
+	background: rgba(4,0,80,0.8);
+}
+div.cparts-var03-type19a .cparts-body-block,
+div.cparts-var03-type19b .cparts-body-block,
+div.cparts-var03-type19a .cparts-body-block strong,
+div.cparts-var03-type19b .cparts-body-block strong{
+	color: #fff;
+}
+
+
+/* タグ切り替え */
+div.cparts-var03-type26a ol li{
+	background-color: rgba(4, 0, 80, 0.1);
+}
+div.cparts-var03-type26a ol li.cparts-select-on{
+	color: #fff;
+}
+@media ( max-width: 767px ) {
+	div.cparts-var03-type26a ol li.cparts-select-on:before{
+		border-top: 2px solid #fff;
+		border-right: 2px solid #fff;
+	}
+
+}
+
+/* 線 */
+div.cparts-var03-type26a ol li.cparts-select-on:before{
+	color: #040050;
+}
+.cparts-var03-type03b .cparts-info-block,
+div.cparts-var03-type24 + div.cparts-var03-type24:after,
+div.cparts-var03-type24 + div.cparts-var03-type24:before,
+div.cparts-var03-type24 + div.cparts-var03-type24.cpv-curve .cparts-head-block,
+div.cparts-var03-type08a .cparts-ttl-block p{
+	color: #040050;
+}
+div.cparts-var03-type16 h5::after,
+div[class*="cparts-var03-type17"] div.cparts-txt-block h5:before,
+div[class*="cparts-var03-type17"] div.cparts-txt-block h5:after,
+div[class*="cparts-var03-type17"] div.cparts-ttl-block h4:before,
+div[class*="cparts-var03-type17"] div.cparts-ttl-block h4:after,
+div.cparts-var03-type20a ul li:nth-child(2n+1):before,
+div.cparts-var03-type20b ul li:nth-child(2n+1):before{
+	color: #040050;
+}
+div.cparts-var03-type16 ul li::after{
+	background-color: #040050;
+}
+div.cparts-var03-type16:nth-of-type(n+2){
+	border-top: 2px solid #eaeaea;
+}
+div.cparts-var03-type21 .cparts-body-block,
+div.cparts-var03-type17a,
+div.cparts-var03-type17b .cparts-body-block,
+div.parts-text-type02{
+	border: 1px solid #040050;
+}
+
+/* 背景 */
+div.cparts-var03-type05 .cparts-body-block,
+div.cparts-var03-type08b .cparts-body-block{
+	background-color: #eaeaea;
+}
+div.cparts-var03-type20a ul li:nth-child(2n+1),
+div.cparts-var03-type20b ul li:nth-child(2n+1){
+	background-color: #eaeaea;
+
+}
+div.cparts-var03-type20a ul li:nth-child(2n+1):after,
+div.cparts-var03-type20b ul li:nth-child(2n+1):after{
+	color: #eaeaea;
+}
+
+div.cparts-var03-type09a .cparts-notes-block, 
+div.cparts-var03-type09b .cparts-notes-block,
+div.cparts-var03-type26a ol li.cparts-select-on{
+	background-color: #040050;
+}
+div.cparts-var03-type08b .cparts-notes-block,
+div.cparts-var03-type08d .cparts-notes-block,
+div.cparts-var03-type08c div.cparts-notes-block p,
+div.cparts-var03-type08e div.cparts-notes-block p,
+div.cparts-var03-type24 .cparts-no-block,
+div.cparts-var03-type05 .cparts-notes-block li{
+	background-color: #040050;
+}
+div.cparts-var03-type12a .cparts-icon-block span{
+	background-color: #040050;
+}
+
+/* テキスト */
+div.cparts-var03-type05 .cparts-body-block .cparts-txt-block,
+div.cparts-var03-type26a ol li,
+div.cparts-var03-type08b .cparts-txt-block{
+	color: #333;
+}
+
+/* キービジュアル */
+#header .cparts-var03-type23 .cparts-img-block:after{
+	background-color: #040050;
+}
+#header .cparts-var03-type23 .cparts-img-block:before{
+	border-color: transparent transparent #040050 transparent;
+}
+#upper .cparts-var03-type23 .cparts-img-block:after{
+	background-color: #fff;
+}
+#upper .cparts-var03-type23 .cparts-img-block:before{
+	border-color: transparent transparent #fff transparent;
+}
+#header .cparts-var03-type22 .cparts-body-block,
+#header .cparts-var03-type23 .cparts-body-block{
+	color: #fff;
+}
+
+/* ----------------------------------------------------------------------
+
+        新規パーツ [2021.9]
+
+---------------------------------------------------------------------- */
+#header div[class*="cparts-id299"]{
+  border-color: #fff;
+}
+
+
+
+/* ----------------------------------------------------------------------
+
+        新規パーツ [2021.10]
+
+---------------------------------------------------------------------- */
+
+#header .cparts-id326__ttl  {
+    color: #333 !important;
+}

@@ -1,0 +1,301 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*　ボタン
+======================================================= */
+[class*="dec-btn"] {
+  display: inline-block;
+  text-decoration: none !important;
+  transition: all .5s;
+  max-width: 100%;
+}
+
+/* base */
+.dec-btn--primary {
+  background-color: #333;
+  color: #fff;
+}
+.dec-btn--secondary {
+  background-color: #777;
+  color: #fff;
+}
+.dec-btn--attention {
+  background-color: #d3191c;
+  color: #fff;
+}
+.dec-btn--dark {
+  background-color: #333;
+  color: #fff;
+}
+.dec-btn--light {
+  background-color: #eee;
+  color: #333;
+}
+.dec-btn--grey {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* outline */
+[class*="dec-btn-ol"] {
+  background-color: #fff;
+  border: 1px solid;
+}
+.dec-btn-ol--primary {
+  border-color: #333;
+  color: #333;
+}
+.dec-btn-ol--secondary {
+  border-color: #777;
+  color: #777;
+}
+.dec-btn-ol--attention {
+  border-color: #d3191c;
+  color: #d3191c;
+}
+.dec-btn-ol--dark {
+  border-color: #333;
+  color: #333;
+}
+.dec-btn-ol--light {
+  border-color: #eee;
+  color: #333;
+}
+.dec-btn-ol--grey {
+  border-color: #ddd;
+  color: #333;
+}
+
+
+/* hover・focus */
+[class*="dec-btn"]:hover,
+[class*="dec-btn"]:focus {
+  text-decoration: none !important;
+}
+.dec-btn--primary:hover,
+.dec-btn--primary:focus,
+.dec-btn--secondary:hover,
+.dec-btn--secondary:focus,
+.dec-btn--attention:hover,
+.dec-btn--attention:focus,
+.dec-btn--dark:hover,
+.dec-btn--dark:focus {
+  color: #fff;
+}
+.dec-btn--light:hover,
+.dec-btn--light:focus,
+.dec-btn--grey:hover,
+.dec-btn--grey:focus {
+  color: #333;
+}
+.dec-btn-ol--primary:hover,
+.dec-btn--primary:focus,
+.dec-btn-ol--dark:hover,
+.dec-btn-ol--dark:focus,
+.dec-btn-ol--light:hover,
+.dec-btn-ol--light:focus,
+.dec-btn-ol--grey:hover,
+.dec-btn-ol--grey:focus {
+  color: #333;
+}
+.dec-btn-ol--secondary:hover,
+.dec-btn-ol--secondary:focus {
+  color: #777;
+}
+.dec-btn-ol--attention:hover,
+.dec-btn-ol--attention:focus {
+  color: #d3191c;
+}
+
+/* size */
+.dec-btn--size-lg { padding: 3rem 24rem;}
+.dec-btn--size-md { padding: 2rem 12rem;}
+.dec-btn--size-sm { padding: 1rem 3rem;}
+
+@media (max-width: 767px) {
+  a.dec-btn--size-lg { padding-right: 6rem; padding-left: 6rem;}
+  a.dec-btn--size-md { padding-right: 4.5rem; padding-left: 4.5rem;}
+}
+
+
+/*　罫線
+======================================================= */
+.dec-line--primary,
+.dec-line-pe--primary::before,
+.dec-line-pe--primary::after {
+  border-color: #333;
+}
+.dec-line--secondary,
+.dec-line-pe--secondary::before,
+.dec-line-pe--secondary::after {
+  border-color: #777;
+}
+.dec-line--attention,
+.dec-line-pe--attention::before,
+.dec-line-pe--attention::after {
+  border-color: #d3191c;
+}
+.dec-line--dark,
+.dec-line-pe--dark::before,
+.dec-line-pe--dark::after {
+  border-color: #333;
+}
+.dec-line--light,
+.dec-line-pe--light::before,
+.dec-line-pe--light::after {
+  border-color: #eee;
+}
+.dec-line--grey,
+.dec-line-pe--grey::before,
+.dec-line-pe--grey::after {
+  border-color: #ddd;
+}
+
+/* 角丸 */
+.dec-line--radius-xl { border-radius: 10rem !important;}
+.dec-line--radius-lg { border-radius: 3rem !important;}
+.dec-line--radius-md { border-radius: 1.5rem !important;}
+.dec-line--radius-sm { border-radius: .5rem !important;}
+.dec-line--radius-0 { border-radius: 0 !important;}
+
+
+/*　背景
+======================================================= */
+.dec-bg--primary,
+.dec-bg-pe--primary::before,
+.dec-bg-pe--primary::after {
+  background-color: #333;
+  color: #fff;
+}
+.dec-bg--secondary,
+.dec-bg-pe--secondary::before,
+.dec-bg-pe--secondary::after {
+  background-color: #777;
+  color: #fff;
+}
+.dec-bg--attention,
+.dec-bg-pe--attention::before,
+.dec-bg-pe--attention::after {
+  background-color: #d3191c;
+  color: #fff;
+}
+.dec-bg--dark,
+.dec-bg-pe--dark::before,
+.dec-bg-pe--dark::after {
+  background-color: #333;
+  color: #fff;
+}
+.dec-bg--light,
+.dec-bg-pe--light::before,
+.dec-bg-pe--light::after {
+  background-color: #eee;
+  color: #333;
+}
+.dec-bg--grey,
+.dec-bg-pe--grey::before,
+.dec-bg-pe--grey::after {
+  background-color: #ddd;
+  color: #333;
+}
+.dec-bg--contents,
+.dec-bg-pe--contents::before,
+.dec-bg-pe--contents::after {
+	background-color: #fff;
+  color: #333;
+}
+
+
+/*　テキスト
+======================================================= */
+.dec-txt--primary,
+.dec-txt-pe--primary::before,
+.dec-txt-pe--primary::after {
+  color: #333;
+}
+.dec-txt--secondary,
+.dec-txt-pe--secondary::before,
+.dec-txt-pe--secondary::after {
+  color: #777;
+}
+.dec-txt--attention,
+.dec-txt-pe--attention::before,
+.dec-txt-pe--attention::after {
+  color: #d3191c;
+}
+.dec-txt--dark,
+.dec-txt-pe--dark::before,
+.dec-txt-pe--dark::after {
+  color: #333;
+}
+.dec-txt--light,
+.dec-txt-pe--light::before,
+.dec-txt-pe--light::after {
+  color: #eee;
+}
+.dec-txt--grey,
+.dec-txt-pe--grey::before,
+.dec-txt-pe--grey::after {
+  color: #ddd;
+}
+
+.dec-txt--white,
+.dec-txt-pe--white::before,
+.dec-txt-pe--white::after {
+  color: #fff !important;
+}
+
+
+/*　ボックス
+======================================================= */
+.dec-box--primary,
+.dec-box-pe--primary::before,
+.dec-box-pe--primary::after  {
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 0;
+}
+.dec-box--secondary,
+.dec-box-pe--secondary::before,
+.dec-box-pe--secondary::after  {
+  background-color: transparent;
+  border: 1px solid #777;
+  border-radius: 0;
+}
+.dec-box--attention,
+.dec-box-pe--attention::before,
+.dec-box-pe--attention::after  {
+  background-color: transparent;
+  border: 1px solid #d3191c;
+  border-radius: 0;
+}
+.dec-box--dark,
+.dec-box-pe--dark::before,
+.dec-box-pe--dark::after  {
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 0;
+}
+.dec-box--light,
+.dec-box-pe--light::before,
+.dec-box-pe--light::after  {
+  background-color: #eee;
+  border: none;
+  border-radius: 0;
+}
+.dec-box--grey,
+.dec-box-pe--grey::before,
+.dec-box-pe--grey::after  {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 0;
+}
+[class*="dec-box-"] {
+  padding: 15px;
+}
+
+/* スマホ以外 */
+@media (min-width: 768px) {
+  [class*="dec-box-"] {
+    padding: 30px;
+  }
+}
