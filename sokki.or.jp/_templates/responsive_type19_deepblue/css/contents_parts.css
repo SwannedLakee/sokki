@@ -1866,3 +1866,17 @@ div.cparts-id327 .cparts-id327__ttl,
     width: 350px;
   }
 }
+
+/* ----------------------------------------------------------------------
+
+    2025年追加分（新規コンテンツパーツ等）
+
+---------------------------------------------------------------------- */
+.cparts-id586--01 > .lay-row > div:last-child > div div > ul > li > ul > li > ul > li,
+.cparts-id586--02 > .lay-row > div:last-child > div div > ul > li > ul > li > ul > li,
+.cparts-id586--03 > .lay-row > div:last-child > div div > ul > li > ul > li > ul > li,
+.cparts-id586--04 > .lay-row > div:first-child > div div > ul > li > ul > li > ul > li,
+.cparts-id586--05 > .lay-row > div:first-child > div div > ul > li > ul > li > ul > li,
+.cparts-id586--06 > .lay-row > div:first-child > div div > ul > li > ul > li > ul > li {
+	padding-left: 0;
+}
